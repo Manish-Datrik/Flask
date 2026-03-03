@@ -3,10 +3,27 @@
 
 
   {% block content %}
-  <h1>this is the login page</h1>
-  {% if boolean == True %}
-   yes it is true
-  {%else%}
-   no it is false
-  {%endif%}
+<form method="post">
+    <h3 align="center">Login</h3>
+    <div class="form-group">
+        <labe for="email">Email</labe>
+        <input 
+        type="text" 
+        name="email" 
+        id="email" 
+        placeholder="email adress"
+        class="form-control">
+
+            <div class="form-group">
+        <labe for="password1">password</labe>
+        <input 
+        type="text" 
+        name="password" 
+        id="password" 
+        placeholder="enter password"
+        class="form-control">
+    </div>
+
+    <button type = "submit" class = "btn btn-primary">Login</button>
+</form>
   {% endblock %}
